@@ -6,13 +6,14 @@ import {
   ShowGuesser,
 } from "react-admin";
 import { dataProvider } from "./dataProvider";
+import { PostEdit } from "./PostEdit";
 
 export const App = () => (
   <Admin dataProvider={dataProvider}>
     <Resource
       name="posts"
       list={ListGuesser}
-      edit={EditGuesser}
+      edit={PostEdit}
       show={ShowGuesser}
     />
     <Resource
